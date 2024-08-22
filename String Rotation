@@ -1,0 +1,25 @@
+Code:
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int i = sc.nextInt();
+        String n =s.substring(0,i);
+        String m= s.substring(s.length()-i,s.length());
+            
+        System.out.print(m+s.substring(i,s.length()-i)+n);
+    }
+}
+Input1:
+mango
+2
+Output1:
+gonma
+
+Input2:
+mango
+1
+Output2:
+oangm
